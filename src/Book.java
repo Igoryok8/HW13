@@ -21,5 +21,9 @@ public class Book {
     public int getYearIssue() {
         return this.yearIssue;
     }
+
+    public void setYearIssue(int yearIssue) {
+        this.yearIssue = yearIssue;
+    }
 }
 

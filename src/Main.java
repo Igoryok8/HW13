@@ -10,6 +10,8 @@ public class Main {
         System.out.println("book.nameBook = " + book.getNameBook());
         System.out.println("book.authorName = " + book.getAuthorName());
         System.out.println("book.yearIssue = " + book.getYearIssue());
+        book.setYearIssue(1967);
+        System.out.println("book.getYearIssue() = " + book.getYearIssue());
         Book book1 = new Book("Преступление и наказание","Фёдор Достоевский",1866);
         System.out.println();
 
