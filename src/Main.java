@@ -8,19 +8,25 @@ public class Main {
 
         Book book = new Book("Мастер и Маргарита","Михаил Булгаков",1966);
         System.out.println("book.nameBook = " + book.getNameBook());
-        System.out.println("book.authorName = " + book.getAuthorName());
+        System.out.println("book.author = " + book.getAuthor());
         System.out.println("book.yearIssue = " + book.getYearIssue());
         book.setYearIssue(1967);
         System.out.println("book.getYearIssue() = " + book.getYearIssue());
+        System.out.println();
         Book book1 = new Book("Преступление и наказание","Фёдор Достоевский",1866);
+        System.out.println("book1.nameBook = " + book1.getNameBook());
+        System.out.println("book1.author = " + book1.getAuthor());
+        System.out.println("book1.yearIssue = " + book1.getYearIssue());
         System.out.println();
 
         System.out.println("2.");
         Author author = new Author("Михаил","Булгаков");
         System.out.println("author.firstName = " + author.getFirstName());
         System.out.println("author.lastName = " + author.getLastName());
-        Author author1 = new Author("Фёдор","Достоевский");
         System.out.println();
+        Author author1 = new Author("Фёдор","Достоевский");
+        System.out.println("author1.firstName = " + author1.getFirstName());
+        System.out.println("author1.lastName = " + author1.getLastName());
 
     }
 
