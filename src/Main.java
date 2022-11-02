@@ -3,26 +3,35 @@ public class Main {
         System.out.println("Домашнее задание 13");
         System.out.println();
         Author author = new Author("Михаил","Булгаков");
-        System.out.println("author.firstName = " + author.getFirstName());
-        System.out.println("author.lastName = " + author.getLastName());
-        System.out.println();
-        Author author1 = new Author("Фёдор","Достоевский");
-        System.out.println("author1.firstName = " + author1.getFirstName());
-        System.out.println("author1.lastName = " + author1.getLastName());
-        System.out.println();
         Book book = new Book("Мастер и Маргарита",author,1966);
-        System.out.println("book.nameBook = " + book.getNameBook());
-        System.out.println("book.author = " + book.getAuthor());
-        System.out.println("book.yearIssue = " + book.getYearIssue());
+        Book book1 = new Book("Преступление и наказание",new Author("Фёдор","Достоевский"),1866);
         book.setYearIssue(1967);
-        System.out.println("book.getYearIssue() = " + book.getYearIssue());
-        System.out.println();
-        Book book1 = new Book("Преступление и наказание",author1,1866);
-        System.out.println();
-        System.out.println("book1.nameBook = " + book1.getNameBook());
-        System.out.println("book1.author1 = " + book1.getAuthor());
-        System.out.println("book1.yearIssue = " + book1.getYearIssue());
-        System.out.println();
+        System.out.println(book.getYearIssue());
+
+        System.out.println("Авторы:");
+        Author mikhailBulgakov = new Author("Михаил","Булгаков");
+        Author mikhailBulgakov1 = new Author("Михаил","Булгаков");
+        Author fyodorDostoevsky = new Author("Фёдор","Достоевский");
+        System.out.println("Author copies equal: "+ mikhailBulgakov.equals(mikhailBulgakov1));
+        System.out.println("Author copies equal by hashCode: " + (mikhailBulgakov.hashCode()==mikhailBulgakov1.hashCode()) );
+        System.out.println("Author equal: "+ mikhailBulgakov.equals(fyodorDostoevsky));
+        System.out.println("Author equal by hashCode: " + (mikhailBulgakov.hashCode()==fyodorDostoevsky.hashCode()));
+
+        System.out.println(mikhailBulgakov);
+        System.out.println(fyodorDostoevsky);
+
+        System.out.println("__________________________");
+
+        System.out.println("Книги:");
+        Book theMasterAndMargarita = new Book("Мастер и Маргарита",mikhailBulgakov,1966);
+        Book theMasterAndMargarita1 = new Book("Мастер и Маргарита",mikhailBulgakov,1967);
+        Book crimeAndPunishment = new Book("Преступление и наказание",fyodorDostoevsky,1866);
+        System.out.println("Book copies equal: "+ theMasterAndMargarita.equals(theMasterAndMargarita1));
+        System.out.println("Book copies equal by hashCode: " + (theMasterAndMargarita.hashCode()==theMasterAndMargarita1.hashCode()) );
+        System.out.println("Book equal: "+ theMasterAndMargarita.equals(crimeAndPunishment));
+        System.out.println("Author equal by hashCode: " + (theMasterAndMargarita.hashCode()==crimeAndPunishment.hashCode()));
+        System.out.println(theMasterAndMargarita);
+        System.out.println(crimeAndPunishment);
 
     }
 }
