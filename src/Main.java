@@ -24,7 +24,7 @@ public class Main {
 
         System.out.println("Книги:");
         Book theMasterAndMargarita = new Book("Мастер и Маргарита",mikhailBulgakov,1966);
-        Book theMasterAndMargarita1 = new Book("Мастер и Маргарита",mikhailBulgakov,1967);
+        Book theMasterAndMargarita1 = new Book("Мастер и Маргарита",mikhailBulgakov,1966);
         Book crimeAndPunishment = new Book("Преступление и наказание",fyodorDostoevsky,1866);
         System.out.println("Book copies equal: "+ theMasterAndMargarita.equals(theMasterAndMargarita1));
         System.out.println("Book copies equal by hashCode: " + (theMasterAndMargarita.hashCode()==theMasterAndMargarita1.hashCode()) );
